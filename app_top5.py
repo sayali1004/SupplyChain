@@ -3,10 +3,10 @@ import streamlit as st
 import numpy as np
 import joblib
 
-# Load saved models
-model = joblib.load("ridge_classifier_model.pkl")
-scaler = joblib.load("scaler.pkl")
-selector = joblib.load("feature_selector.pkl")
+# Load top 5 feature pipeline components
+model = joblib.load("ridge_classifier_model_top5.pkl")
+scaler = joblib.load("scaler_top5.pkl")
+selector = joblib.load("feature_selector_top5.pkl")
 
 # Define input fields
 st.title("Supply Chain Risk Classifier (Top 5 Features)")
